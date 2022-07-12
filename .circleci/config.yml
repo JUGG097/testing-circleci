@@ -31,8 +31,8 @@ jobs:
           name: "Save Hello World to file"
           command: echo Hello, World! to $MY_ENV_NAME > output.txt
       - persist_to_workspace:
-          root: ~/
-          paths: helloWorld/output.txt
+          root: .
+          paths: output.txt
 
   print_hello_world_output:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
@@ -47,7 +47,7 @@ jobs:
           name: "Print Hello World from file"
           command: cat output.txt
       - attach_workspace:
-          at: ~/helloWorld
+          at: .
           
 
 # Invoke jobs via workflows

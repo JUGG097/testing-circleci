@@ -31,7 +31,7 @@ jobs:
           name: "Save Hello World to file"
           command: echo Hello, World! to $MY_ENV_NAME > output.txt
       - persist_to_workspace:
-          root: tmp/workspace
+          root: tmp/dir
           paths: output.txt
 
   print_hello_world_output:
@@ -47,7 +47,7 @@ jobs:
           name: "Print Hello World from file"
           command: cat output.txt
       - attach_workspace:
-          at: tmp/workspace
+          at: tmp/dir
           
 
 # Invoke jobs via workflows

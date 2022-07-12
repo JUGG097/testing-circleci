@@ -47,7 +47,7 @@ jobs:
       - checkout
       - run:
           name: "Print Hello World from file"
-          command: cat home/circleci/output.txt
+          command: cat ./output.txt
       - attach_workspace:
           at: .
           

@@ -50,9 +50,9 @@ jobs:
       - checkout
       - run:
           name: "Print Hello World from file"
-          command: cat /tmp/output.txt
+          command: cat home/circleci/output.txt
       - attach_workspace:
-          at: /tmp
+          at: .
           
 
 # Invoke jobs via workflows

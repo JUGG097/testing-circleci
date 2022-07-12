@@ -4,7 +4,7 @@
 version: 2.1
 
 commands:
-  printpipelineID:
+  print_pipeline_id:
     description: 'Prints the ID of the current pipeline'
     steps:
       - run: echo 'The current pipeline id is $CIRCLE_WORKFLOW_ID'
@@ -24,7 +24,7 @@ jobs:
       - run:
           name: "Say hello"
           command: echo Hello, World! to $MY_ENV_NAME
-      - printpipelineID
+      - print_pipeline_id
 
   save_hello_world_output:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.

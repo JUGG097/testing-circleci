@@ -46,7 +46,7 @@ jobs:
       - run:
           name: "Print Hello World from file"
           command: cat output.txt
-      - attach_to_workspace:
+      - attach_workspace:
           at: /tmp/workspace
           
 

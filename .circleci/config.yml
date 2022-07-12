@@ -25,7 +25,7 @@ jobs:
           name: "Say hello"
           command: echo Hello, World! to $MY_ENV_NAME
       - print_pipeline_id
-      - run: exit 1
+      - run: echo Mumsy
       - run: 
           name: "Job Failure"
           command: echo Hurray Job Failed

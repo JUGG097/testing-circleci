@@ -47,7 +47,7 @@ jobs:
           name: "Print Hello World from file"
           command: cat output.txt
       - attach_workspace:
-          at: .
+          at: ./
           
 
 # Invoke jobs via workflows

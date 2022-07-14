@@ -36,7 +36,7 @@ jobs:
           name: Run Playbook and Configure server
           command: |
             # Your command
-            ansible-playbook -i inventory.txt main.yml --private-key AnsibleInsantances.pem
+            ansible-playbook main.yml -i inventory.txt
           
 
 # Invoke jobs via workflows
